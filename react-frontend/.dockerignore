@@ -1,0 +1,9 @@
+# react-frontend/.dockerignore
+
+node_modules/
+dist/
+build/
+.cache/
+*.log
+.DS_Store
+**/.DS_Store

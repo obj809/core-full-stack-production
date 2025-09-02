@@ -10,6 +10,10 @@ db = None
 def init_db(app_db):
     global db
     db = app_db
+    
+@todos_bp.route('/health', methods=['GET'])
+def bp_health():
+    return jsonify(status="ok"), 200
 
 @todos_bp.route('/helloworld')
 def hello_world():
