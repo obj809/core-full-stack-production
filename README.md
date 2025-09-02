@@ -1,0 +1,1 @@
+# core-full-stack-docker
