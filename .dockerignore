@@ -1,6 +1,5 @@
 # .dockerignore
 
-# Python
 __pycache__/
 **/__pycache__/
 *.pyc
@@ -11,21 +10,17 @@ __pycache__/
 .venv/
 venv/
 
-# Environment & logs
 .env
 *.log
 
-# Node/Frontend
 node_modules/
 react-frontend/node_modules
 dist/
 build/
 .cache/
 
-# OS junk
 .DS_Store
 **/.DS_Store
 
-# Git
 .git
 .gitignore

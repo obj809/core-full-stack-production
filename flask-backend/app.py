@@ -31,13 +31,11 @@ app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
 db = SQLAlchemy(app)
 routes.init_db(db)
 
-# CORS: dev open, prod restricted
 if config_name == "development":
     CORS(app)
 else:
     CORS(app, resources={r"/api/*": {"origins": os.getenv("CORS_ORIGIN")}})
 
-# Mount your blueprint under /api
 app.register_blueprint(routes.todos_bp, url_prefix="/api")
 
 @app.get("/health")
